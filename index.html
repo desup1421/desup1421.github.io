@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Konversi Suhu</h1>
+    </header>
+
+    <main>
+        <section class="calculations">
+            <div class="input-container">
+                <div class="left-temperature-section">
+                    <div class="input-section"></div>
+                    <div class="select-options">
+                        <input id="left-input-temperature" type="number">
+                        <select name="left-temperature-unit" id="left-temperature-unit">
+                            <option value="celcius">Celsius (&deg;C)</option>
+                            <option value="kelvin">Kelvin (K)</option>
+                            <option value="fahrenheit">Fahrenheit (&deg;F)</option>
+                            <option value="reaumur">Reaumur (&deg;R)</option>
+                        </select>
+                    </div>
+                </div>
+                <p class="equal"> = </p>
+                <div class="right-temperature-section">
+                    <div class="input-section"></div>
+                    <div class="select-options">
+                        <input id="right-input-temperature" type="number">
+                        <select name="right-temperature-unit" id="right-temperature-unit">
+                            <option value="celcius">Celsius (&deg;C)</option>
+                            <option value="kelvin">Kelvin (K)</option>
+                            <option value="fahrenheit">Fahrenheit (&deg;F)</option>
+                            <option value="reaumur">Reaumur (&deg;R)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="calculation-steps">
+                <textarea name="calculation-step-display" id="calculation-step-display" disabled></textarea>
+            </div>
+        </section>
+
+        <section class="formula-explanations">
+            <h2>Cara Konversi</h2>
+            <div class="formula-explanation-display"></div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
