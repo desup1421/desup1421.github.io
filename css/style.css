@@ -1,15 +1,37 @@
 * {
     box-sizing: border-box;
 }
-body, main, section {
+body {
+    height: 90vh;
+    max-height: 90vh;
+    font-family: sans-serif;
+    padding: 30px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     max-width: 100%;
+    padding: 10px;
+}
+.container {
+    max-width: 1000px;
+    width: 100%;
+    padding: 30px;
 }
 h1 {
     text-align: center;
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.1rem;
 }
 .calculations {
     border: 1px solid rgb(185, 183, 183);
+    padding: 10px;
     border-radius: 5px;
+    max-width: 100%;
 }
 .input-container {
     display: flex;
@@ -20,23 +42,65 @@ h1 {
 }
 input, select, button {
     height: 30px;
-    border: 1px solid rgb(185, 183, 183);
     border-radius: 5px;
+    max-width: 100%;
 }
-.calculation-steps {
+input, select {
+    border: 1px solid rgb(185, 183, 183);
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+#reverse-button {
+    background-color: rgb(93, 156, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.calculation-process {
     display: flex;
 }
-#calculation-step-display {
+#calculation-process-display {
     width: 100%;
+    height: 35px;
     resize: none;
     margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    padding: 5px;
+    font-family: sans-serif;
 }
 .equal {
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;
+    margin: 0;
 }
-.buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#formula-display {
+    text-align: center;
+    width: 70%;
+    height: 35px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    margin: auto;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 760px) {
+    input, select {
+        /* border: 1px solid rgb(185, 183, 183); */
+        width: 100%;
+    }
+    .input-container {
+        display: block;
+    }
+    #calculation-process-display, #formula-display{
+        height: fit-content;
+        min-height: 30px;
+        width: 100%;
+    }
 }
