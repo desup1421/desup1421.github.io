@@ -44,15 +44,27 @@
                 </div>
                 <div class="buttons">
                     <button id="reverse-button">Reverse</button>
+                    <button id="reset-button">Reset</button>
                 </div>
                 <div class="calculation-process">
                     <textarea name="calculation-process-display" id="calculation-process-display" disabled></textarea>
                 </div>
             </section>
     
-            <section class="formula-explanations">
-                <h2>Formula untuk mengkonversi suhu<span id="title-text">:</h2>
-                <div id="formula-display"></div>
+            <section class="formula-section">
+                <div class="formlua-container">
+                    <header>
+                        <h2>Formula untuk mengkonversi suhu:</h2>
+                    </header>
+                    <div id="formula-display"></div>
+                </div>
+                <div id="formula-explanation-section">
+                    <header>
+                        <h3 id="where"></h3>
+                    </header>
+                    <div class="formula-explanations" id="formula-explanation-display-one"></div>
+                    <div class="formula-explanations" id="formula-explanation-display-two"></div>
+                </div>
             </section>
         </div>
     </main>
